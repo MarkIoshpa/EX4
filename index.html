@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mark Ioshpa</title>
+		<link rel="stylesheet" href="includes/style.css">
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	
+	<body>
+		<header class="mainHeader">
+				<h1>Join Our Members Club</h1>
+		</header>
+		
+		<div id="wrapper">
+			<form class ="joinForm" action="http://html5-book.co.il/teach/forms/get_form2.php" method="get">
+				<label>Full name: <input name="fullName" pattern="[A-Za-z].{1,}" title="Name must contain only letters from A to Z"></label>
+				<label>Password: <input type="password" pattern=".{4,}" name="pass"  title="Password must be at least 4 characters long"></label>
+				<label>E-Mail: <input type="email" name="mail"></label>
+				<label>Your Website: <input type="url" name="website"></label>
+				<label>Phone: <input type="tel" name="phone"></label>
+				<label>Address: <input name="address"></label>
+				
+				<section class="formLong">
+					<label>Amount of coffee you drink a day: <input name="coffee" type="number" value="0" min="0"></label>
+					<label>The temperature now is:  -10<input name="temper" type="range" min="-10" max="50" step="1">50</label>
+				</section>
+				
+				<fieldset class="formList">
+					<legend>Interests</legend>
+					<label><input name="interests[]" type="checkbox" value="Programming"> Programming</label>
+					<label><input name="interests[]" type="checkbox" value="Reading"> Reading</label>
+					<label><input name="interests[]" type="checkbox" value="Gaming"> Gaming</label>
+					<label><input name="interests[]" type="checkbox" value="Sports"> Sports</label>
+				</fieldset>
+				
+				<fieldset class="formList">
+					<legend>Gender</legend>
+					<label><input name="gender" type="radio" value="male"> Male</label>
+					<label><input name="gender" type="radio" value="female"> Female</label>
+				</fieldset><br>
+				
+				<label>Age: 
+					<select name="age">
+						<option value="18-22">18-22</option>
+						<option value="22-26">22-26</option>
+						<option value="26-30">26-30</option>
+						<option value="30+">30+</option>
+					</select>
+				</label><br>
+				
+				<button>Submit Me</button>
+			</form>
+			
+			<aside class="sideCounter">
+				<h2>Number of new registers:</h2>
+				<div id="counter">000000</div>
+			</aside>
+			
+			<script src="includes/script.js"></script>
+		</div
+	</body>
+</html>
